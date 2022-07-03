@@ -15,14 +15,14 @@ const assignment = {};
  */
 
  
-var sum = 0;
+var ell = 0;
 function sumOfNumbers(arrayOfNumbers) { 
     arrayOfNumbers.forEach((x) => {
-        sum += x;
+        ell += x;
     });
-    return sum;
+    return ell;
 }
-console.log(sum);
+console.log(ell);
 assignment.sumOfNumbers = sumOfNumbers;
 
 /**
