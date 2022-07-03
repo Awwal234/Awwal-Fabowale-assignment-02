@@ -20,7 +20,7 @@ function sumOfNumbers(arrayOfNumbers) {
     arrayOfNumbers.forEach((x) => {
         sum += x;
     });
-    return sum;
+    return su;
 }
 console.log(sum);
 assignment.sumOfNumbers = sumOfNumbers;
