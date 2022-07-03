@@ -10,13 +10,20 @@ const assignment = {};
  * Calculate and return the sum of the numbers in an array.
  * If you did Challenge - 1, remove the comment in the line just after this function
  * 
- * @param {Array} arrayOfNumbers the array of numbers to sum
+ * @param {7,8,9,10} arrayOfNumbers the array of numbers to sum
  * @returns number the sum of the numbers
  */
-function sumOfNumbers(arrayOfNumbers) {
-    return arrayOfNumbers.length;
+
+ 
+var sum = 0;
+function sumOfNumbers(arrayOfNumbers) { 
+    arrayOfNumbers.forEach((x) => {
+        sum += x;
+    });
+    return sum;
 }
-// assignment.sumOfNumbers = sumOfNumbers;
+console.log(sum);
+assignment.sumOfNumbers = sumOfNumbers;
 
 /**
  * Challenge - 2
@@ -24,13 +31,21 @@ function sumOfNumbers(arrayOfNumbers) {
  * Count all even numbers within an array of numbers.
  * If you did Challenge - 2, remove the comment in the line just after this function
  * 
- * @param {Array} arrayOfNumbers the array containing even or non-even numbers
+ * @param {4,5,7,8,14,76} arrayOfNumbers the array containing even or non-even numbers
  * @returns number the count of even numbers
  */
+
+var count = 0
 function countEvenNumbers(arrayOfNumbers) {
-    return arrayOfNumbers.length;
+    for (let i=0; i<arrayOfNumbers.length; i++){
+        if (arrayOfNumbers[i] % 2 === 0){
+            count++;
+        }
+    }
+    return count;
 }
-// assignment.countEvenNumbers = countEvenNumbers;
+
+assignment.countEvenNumbers = countEvenNumbers;
 
 /**
  * Challenge - 3
